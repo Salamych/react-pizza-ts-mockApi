@@ -5,7 +5,7 @@ import { changeCategory } from '../redux/filter/slice';
 
 
 
-const Categories = React.memo(() => {
+export const Categories: React.FC = React.memo(() => {
   const dispatch = useDispatch();
   const { categories, value } = useSelector(filterSelector);
 
@@ -27,5 +27,3 @@ const Categories = React.memo(() => {
   );
 })
 
-
-export default Categories;

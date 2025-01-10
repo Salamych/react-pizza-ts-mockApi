@@ -12,7 +12,7 @@ type SortItem = {
 type FunctionChangeAndClose = (type: SortItem) => void;
 
 
-const Sort = React.memo(() => {
+export const Sort: React.FC = React.memo(() => {
 
   const [ isVisible, setIsVisible ] = React.useState(false);
   const sortRef = React.useRef<HTMLDivElement>(null);
@@ -75,4 +75,3 @@ const Sort = React.memo(() => {
 })
 
 
-export default Sort;

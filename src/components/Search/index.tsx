@@ -6,7 +6,7 @@ import styles from './Search.module.scss';
 import { setSearchValue } from '../../redux/search/slice';
 
 
-export default function Search(){
+export const Search: React.FC = () => {
   const dispatch = useDispatch();
 
   const [ value, setValue ] = React.useState('');

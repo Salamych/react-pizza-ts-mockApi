@@ -6,7 +6,7 @@ import { currentPageSelector } from '../../redux/pagination/selectors';
 import { changePageCount } from '../../redux/pagination/slice';
 
 
-export default function Pagination(){
+export const Pagination: React.FC = () => {
   const dispatch = useDispatch();
   const currentPage = useSelector(currentPageSelector);
  
